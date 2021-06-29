@@ -23,3 +23,6 @@ spec:
     matchLabels:
       nmstate-label: {{ cluster_name }}-nmstate
 {% endif %}
+{% if ignitionConfigOverride is defined and ignitionConfigOverride|length > 0 %}
+  ignitionConfigOverride: '{{ ignitionConfigOverride }}'
+{% endif %}
