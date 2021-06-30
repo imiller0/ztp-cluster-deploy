@@ -25,6 +25,8 @@
   - cluster_deployment.yaml
   - infra_env.yaml
   - baremetal_host.yaml
+  - managed_cluster.yaml
+  - klusterlet_addon.yaml
 
 - name: Parse nmstate template into temporary path
   template:
@@ -56,5 +58,7 @@
   - agent_cluster_install.yaml
   - infra_env.yaml
   - baremetal_host.yaml
+  - managed_cluster.yaml
+  - klusterlet_addon.yaml
 
 

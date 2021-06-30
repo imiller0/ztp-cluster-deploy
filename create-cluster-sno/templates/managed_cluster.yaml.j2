@@ -1,0 +1,13 @@
+apiVersion: cluster.open-cluster-management.io/v1
+kind: ManagedCluster
+metadata:
+  labels:
+    cloud: auto-detect
+    vendor: auto-detect
+    name: {{ cluster_name }}-cluster
+    common: "true"
+    group-{{ cluster_name }}: ""
+    sites: "{{ cluster_name }}"
+  name: {{ cluster_name }}-cluster
+spec:
+  hubAcceptsClient: true
